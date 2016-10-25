@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+</head>
+<body>
+<div ng-app="appModule">
+<div ng-controller ="AppCtrlUser">
+<p ng-bind="name">{{name}}</p>
+<p>{{job}}</p>
+<p>
+<span ng-repeat="skill in skills">{{skill}}</span>
+<p ng-click ="rename('angularJS')">Click Me </p>
+</p>
+<div hello-Directive selectscope = 'playerOne'></div>
+<div hello-Directive selectscope = 'playerTwo'></div>
+</div>
+</div>
+<script src="js/shared/angular.min.js"></script>
+<script src="js/controllers/MainController.js"></script>
+</body>
+</html>
